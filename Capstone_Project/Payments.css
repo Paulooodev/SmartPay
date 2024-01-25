@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+:root{
+    /* primary colours */
+    --primaryColourOne: #364d59;
+    --primaryColourTwo: #feb900;
+    --primarycolourThree: #f5f6f7;
+    --primarycolourFour: #09c372;
+    --primarycolourFive: #ff3860;
+    /* --primarycolourSix: #f6f9ff; */
+
+    /* Smooth scroll behaviour */
+
+    scroll-behavior: smooth;
+
+    /* Typography */
+    --fontSizeLight: 200;
+    --fontSizeMedium: 300;
+    --fontSizeHeavy: 500;
+}
+
+
+/* Body styling */
+
+body {
+    /* background: var(--primarycolourSix); */
+}
+
+/* Logo Styling */
+
+.d-flex .logo h1{
+    font-size: 2rem;
+}
+
+span {
+    color: var(--primaryColourTwo);
+ }
+
+.d-flex a {
+    text-decoration:none;
+}
+
+/* Card body Styling */
+
+.small {
+    font-weight: var(--fontSizeMedium);
+}
+
+.card {
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}

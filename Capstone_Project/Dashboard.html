@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+     <!-- Icon files -->
+     <script src="https://kit.fontawesome.com/991067a906.js" crossorigin="anonymous"></script>
+    <!-- Local CSS File -->
+    <link rel="stylesheet" href="Dashboard.css">
+</head>
+<body>
+    <!-- NAVBAR AND HARMBURGER MARK-UP -->
+    <header class="header">
+        <div class="menu" id="JS_menuBar">
+            <div>
+               <span class="line1"></span>
+               <span class="line2"></span>
+               <span class="line3"></span>
+            </div>
+          </div>
+          
+          <div class="user">
+              <h4>Your Dashboard</h4>
+          </div>
+
+          <nav class="navbar">
+              <ul class="navList">
+                  <li class="navItem"><a href="Dashboard.html" class="navLinks"><i class="fa-solid fa-table-list"></i> Overview</a></li>
+                  <li class="navItem"><a href="Payments.html" class="navLinks"><i class="fa-regular fa-credit-card"></i> Payments</a></li>
+                  <li class="navItem"><a href="#main" class="navLinks"><i class="fa-solid fa-chart-line"></i> Statistics</a></li>
+                </ul>
+            </nav>
+            <div class="profile pe-0">
+                <img src="/Capstone_Project/Assets/image-avatar.png" alt="UserAvatar" class="avatar">
+                <p class="ProfileName">Oloyede Paul</p>      
+            </div>
+    </header>
+
+    <!-- MAIN DASHBOARD MARK-UP -->
+    <main class="main py-6" id="main">
+        <div class="container-fluid">
+            <!-- 4 CARD BOXES -->
+            <div class="row gap-3 mb-5">
+                <div class="col-xl-3 col-sm-6 col-12">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="h6 text-sm d-block mb-2">Household Budget</span>
+                                    <span class="h4 font-bold mb-0">#11,590,000.90</span>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="icon icon-shape bg-tertiary text-white text-lg rounded-circle">
+                                        <i class="bi bi-credit-card"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-12">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="h6 text-sm d-block mb-2">Household Users</span>
+                                    <span class="h4 font-bold mb-0">456</span>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="icon icon-shape bg-tertiary text-white text-lg rounded-circle">
+                                        <i class="fa-solid fa-users"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-xl-3 col-sm-6 col-12">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="h6 d-block">Revenues | This year</span>
+                                    <span class="h4 font-bold mb-0">#123,465,011.98</span>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-xl-3 col-sm-6 col-12">
+                    <div class="card shadow border-0">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <span class="h6 text-sm d-block">Payments | Last Week</span>
+                                    <span class="h4 font-bold mb-0">7862</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PAYMENT AND AMOUNT OWED CARD BOXES -->
+        <div class="col-12 mb-5">
+            <div class="card pending payments overflow-auto">
+                <div class="card-body pb-0">
+                    <h5 class="card-title">
+                        Pending payments <span>| This Month</span>
+                    </h5>
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col">Username</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Details</th>
+                                <th scope="col">Payment status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><p>Naiho Immanuella</p></td>
+                                <td>Nov 17, 2023</td>
+                                <td>Light bills</td>
+                                <td>Pending...</td>
+                            </tr>
+                            <tr>
+                                <td><p>Okpara Chibuike</p></td>
+                                <td>Nov 18, 2023</td>
+                                <td>Internet</td>
+                                <td>Pending...</td>
+                            </tr>
+                            <tr>
+                                <td><p>Okodugha Peter</p></td>
+                                <td>Nov 16, 2023</td>
+                                <td>Food Stuffs</td>
+                                <td>Pending...</td>
+                            </tr>
+                            <tr>
+                                <td><p>Ade Emmanuel</p></td>
+                                <td>Nov 13, 2023</td>
+                                <td>Apple Music</td>
+                                <td>Pending...</td>
+                            </tr>
+                            <tr>
+                                <td><p>Obie Joshua</p></td>
+                                <td>Nov 01, 2023</td>
+                                <td>Health bills</td>
+                                <td>Pending...</td>
+                            </tr>
+                            <tr>
+                                <td><p>Abumwenre Osaze</p></td>
+                                <td>Nov 05, 2023</td>
+                                <td>Food Stuffs</td>
+                                <td>Pending...</td>
+                            </tr>
+                            <tr>
+                                <td><p>Bello Mayokun</p></td>
+                                <td>Nov 02, 2023</td>
+                                <td>Light bills</td>
+                                <td>Pending...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="card pending payments overflow-auto">
+                <div class="card-body pb-0">
+                    <h5 class="card-title">
+                        Amounts Owed <span>| October</span>
+                    </h5>
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col">Username</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Details</th>
+                                <th scope="col">Amounts Owed</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><p>Okodugha Peter</p></td>
+                                <td>Nov 17, 2023</td>
+                                <td>Light bills</td>
+                                <td>#12,054.09</td>
+                            </tr>
+                            <tr>
+                                <td><p>Okpara Chibuike</p></td>
+                                <td>Nov 18, 2023</td>
+                                <td>Internet</td>
+                                <td>#135,351.67</td>
+                            </tr>
+                            <tr>
+                                <td><p>Ikechukwu Chibueze</p></td>
+                                <td>Nov 16, 2023</td>
+                                <td>Transport</td>
+                                <td>#100,000.78</td>
+                            </tr>
+                            <tr>
+                                <td><p>Ade Emmanuel</p></td>
+                                <td>Nov 13, 2023</td>
+                                <td>Betting</td>
+                                <td>#390,099.06</td>
+                            </tr>
+                            <tr>
+                                <td><p>Obie Joshua</p></td>
+                                <td>Nov 01, 2023</td>
+                                <td>ATM</td>
+                                <td>#1,300.89</td>
+                            </tr>
+                            <tr>
+                                <td><p>Abumwenre Osaze</p></td>
+                                <td>Nov 05, 2023</td>
+                                <td>Airtime</td>
+                                <td>#17,000.79</td>
+                            </tr>
+                            <tr>
+                                <td><p>Bello Mayokun</p></td>
+                                <td>Nov 02, 2023</td>
+                                <td>Gift Cards</td>
+                                <td>#214,000.34</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="Dashboard.js"></script>
+</body>
+</html>

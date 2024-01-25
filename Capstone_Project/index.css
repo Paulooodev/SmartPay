@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+:root{
+    /* primary colours */
+    --primaryColourOne: #364d59;
+    --primaryColourTwo: #feb900;
+    --primarycolourThree: #f5f6f7;
+    --primarycolourFour: #09c372;
+    --primarycolourFive: #ff3860;
+
+    /* Smooth scroll behaviour */
+
+    scroll-behavior: smooth;
+
+    /* Typography */
+    --fontSizeLight: 200;
+    --fontSizeMedium: 300;
+    --fontSizeHeavy: 500;
+}
+
+/* Header , NavBar and Hamburger Styling */
+
+.header {
+    z-index: 1000;
+    position: absolute;
+    padding: 30px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header .logo h1{
+    font-size: 2rem;
+    color: var(--primarycolourThree);
+}
+
+span {
+    color: var(--primaryColourTwo);
+ }
+
+.header a {
+    text-decoration:none;
+}
+
+.menu{
+    width: 2rem;
+    height: 2rem;
+    margin: 2px;
+    border: 1px solid var(--primarycolourThree);
+    cursor: pointer;
+    border-radius: 0.3rem;
+    z-index: 9999;
+}
+
+.menu div {
+    position: relative;
+    width: 0.9rem;
+    height: 0.9rem;
+    margin: 0.3rem;
+}
+
+.menu span {
+    background-color: var(--primarycolourThree);
+    height: 3px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 20%;
+    right: -65%;
+    transform: translate(-40%, -60%);
+    transition: transform 0.5s;
+}
+
+.menu .line2 {
+    transform: translate(-40%, 5px);
+}
+
+.menu .line1 {
+    transform: translate(-40%, 13px);
+}
+
+.is-active .line2 {
+    transform: translate(-40%, 50%) rotate(45deg);
+    z-index: 10000;
+    padding-block: 2px;
+}
+
+.is-active .line1 {
+    opacity: 0;
+}
+
+.is-active .line3 {
+    transform: translate(-40%, 50%) rotate(-45deg);
+    z-index: 10000;
+    padding-block: 2px;
+}
+
+
+.navbar::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9994;
+}
+
+.navbar {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 400px;
+    width: 100%;
+    overflow-y: auto;
+    transform: translateX(120%);
+    transition: transform 0.5s;
+    z-index: 9997;
+}
+
+.navbar ul {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 80px 0;
+    margin: 1rem;
+    z-index: 9998;
+}
+
+.navLink {
+    color: var(--primarycolourThree);
+    font-weight: var(--fontSizeLight);
+    font-size: 2rem;
+}
+
+.navLink:hover{
+     color: var(--primaryColourTwo);
+}
+
+/* Hero section styling */
+
+section {
+    overflow: hidden;
+  }
+  
+.section-bg {
+    background-color: var(--primarycolourThree);
+  }
+
+.hero {
+    overflow-x: hidden;
+    padding: 0;
+}
+
+.hero .info {
+    position: absolute;
+    inset: 0;
+    z-index: 100;
+}
+
+.hero .carousel {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0;
+    margin: 0;
+    position: relative;
+}
+
+.hero .carousel-item {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: 1;
+    transition-duration: 0.5s;
+  }
+  
+.hero .carousel-item::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    inset: 0;
+}
+
+.hero .info .show_animate .animate {
+    transform: translateX(0);
+}
+
+section .animate {
+    transition: 2s;
+}
+
+.hero .info h2 {
+    color: var(--primarycolourThree);
+    font-size: 2.5rem;
+    padding: 20px 0;
+}
+
+.hero .info h2:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 4px;
+    border-radius: 0.3rem;
+    background: var(--primaryColourTwo);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.hero .info p {
+    color: var(--primarycolourThree);
+    font-weight: var(--fontSizeLight);
+
+}
+
+.hero .info .btn {
+    color: var(--primarycolourThree);
+    border: 1px solid var(--primaryColourTwo);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+.hero .info .btn:hover {
+    background: var(--primaryColourTwo);
+}
+
+
+

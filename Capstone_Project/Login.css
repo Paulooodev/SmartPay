@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+:root{
+    /* primary colours */
+    --primaryColourOne: #364d59;
+    --primaryColourTwo: #feb900;
+    --primarycolourThree: #f5f6f7;
+    --primarycolourFour: #09c372;
+    --primarycolourFive: #ff3860;
+
+    /* Smooth scroll behaviour */
+
+    scroll-behavior: smooth;
+
+    /* Typography */
+    --fontSizeLight: 200;
+    --fontSizeMedium: 300;
+    --fontSizeHeavy: 500;
+}
+
+/* Login/Sign-up Styling */
+
+.LoginContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:var(--primarycolourThree);
+    position: relative;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 60px 70px 80px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--primarycolourThree);
+    margin-bottom: 50px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: var(--primaryColourTwo);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input-field {
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: stretch;
+    max-height: 150px;
+    transition: max-height 0.6s;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.input-field .error{
+    color: #ff3860;
+    font-size: 0.5rem;
+    padding: 8px;
+}
+
+.input-field:focus {
+    outline: 0;
+}
+
+i {
+    color: var(--primaryColourTwo);
+    font-size: 0.8rem;
+    padding: 8px;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    height: 30px;
+    padding: 1rem 1rem;
+}
+
+p {
+    color: var(--primarycolourThree);
+    font-weight: var(--fontSizeLight);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primaryColourTwo);
+}
+
+.btn-field {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-field button {
+    height: 35px;
+    border: 1px solid var(--primaryColourTwo);
+    cursor: pointer;
+    flex-basis: 40%;
+    border-radius: 0.9rem;
+    border: 0;
+    outline: 0;
+    transition: background 1s;
+    margin-top: 1rem;
+    
+}
+
+.btn-field button:hover {
+    background: var(--primaryColourTwo);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootsrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Icon files -->
+    <script src="https://kit.fontawesome.com/991067a906.js" crossorigin="anonymous"></script>
+    <!-- Local CSS files -->
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+        <!-- LOGIN/SIGN-UP SECTION MARK-UP -->
+    <main>
+        <section id="Login_SignUp" class="login/Sign-Up">
+            <div class="LoginContainer">    
+                <div class="form-box">
+                    <h2 id="title">Login</h2>
+                    <form id="LoginForm">
+                        <div class="input-group">
+                            <div class="input-field">
+                                <i class="fa-solid fa-user"></i> 
+                                <input type="text" id="demo_One" placeholder="Username">
+                                <div class="error"></div>
+                            </div>
+                        </div>
+            
+                        <div class="input-group">
+                            <div class="input-field">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" id="demo_Two" placeholder="Password">
+                                <div class="error"></div>
+                            </div>
+                            <p>Forgot password <a href="#">Click Here!</a></p>
+                        </div>
+                        <div class="btn-field">
+                            <button type="submit" id="Submit_btn">Submit</button>
+                        </div>
+                    </form>
+               </div>
+                </div>
+        </section>
+    </main>
+    <script src="Login.js"></script>
+</body>
+</html>
